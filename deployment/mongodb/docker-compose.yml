@@ -16,6 +16,15 @@ services:
       timeout: 5s
       retries: 3
 
+  mongodbui:
+    image: mongo-express
+    ports: 
+      - 9090:8081
+    networks:
+      - mongodb-network  
+    environment:
+      - ME_CONFIG_MONGODB_URL=mongodb://mongodb:27017
+
 networks:
   mongodb-network:
     name: mongodb-network

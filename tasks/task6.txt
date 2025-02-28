@@ -1,0 +1,7 @@
+Proxy erstellen
+---------------
+
+- Erstelle in deployment/proxy eine nginx.conf und ein docker-compose
+- Ein nginx Server soll als Proxy for blue bzw. green Instanz gesetzt werden
+- Per Standard soll das blue Deployment verwendet werden
+- Später wird dieser Proxy verwendet, um zwischen dem Deployment umzuschalten

@@ -1,0 +1,22 @@
+meta {
+  name: Update a single todo by id
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/api/todos/:id
+  body: json
+  auth: none
+}
+
+params:path {
+  id: 67c1019600594c9dd98daea2
+}
+
+body:json {
+   {
+     "title": "Take some notes now",
+     "completed": false
+   }
+}

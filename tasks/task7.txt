@@ -1,0 +1,20 @@
+Umbenennung completed zu done
+-----------------------------
+
+- Dies soll in einer kompatiblen Form durchgeführt werden
+  - Keine Ausfallzeit
+  - Rollbackmöglichkeit
+- Der Ablauf ist daher dieser
+  - Annahme, aktuell ist blue Deployment aktiv
+  - done wird zusätzlich aufgenommen
+  - Information wird weiterhin von completed gelesen
+  - Speichern erfolgt in completed und done
+  - Die neue Version wird as green Deployment aktiviert
+  - Mit einem Skript werden die Daten konvertiert (Endpunkt) -> completed auf done geschrieben
+  - Bis zu diesem Zeitpunkt ist immer noch ein Rollback möglich
+  - Die Anwendung wird geändert, dass nur noch done geschrieben und gelesen wird
+  - Dies wird als blue Deployment aktiviert
+  - Mit einem Skript wird completed nun entfernt (Endpunkt)
+
+Siehe auch:
+https://www.liquibase.com/blog/blue-green-deployments-liquibase

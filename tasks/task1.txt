@@ -1,0 +1,5 @@
+Dockerisiere die API
+--------------------
+
+- Erstelle ein Dockerfile, das die gegebene API beinhaltet.
+- Teste die Erstellung des Images.

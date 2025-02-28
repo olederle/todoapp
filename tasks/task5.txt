@@ -1,0 +1,4 @@
+docker-copose für green Deployment erstellen
+--------------------------------------------
+
+- Analog zu blue Deployment, aber mit Port 8082

@@ -1,0 +1,15 @@
+meta {
+  name: Get a single todo by id
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/api/todos/:id
+  body: none
+  auth: none
+}
+
+params:path {
+  id: 67c1019600594c9dd98daea2
+}

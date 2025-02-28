@@ -1,0 +1,7 @@
+Fehlende Endpunkte ergänzen
+---------------------------
+
+- POST /todos — ein neues ToDo erstellen
+- GET /todos/:id — holt ein einzelnes Todo per ID
+- PUT /todos/:id — aktualisiert ein einzelnes Todo mit ID
+- DELETE /todos/:id — löscht ein einzelnes Todo per ID

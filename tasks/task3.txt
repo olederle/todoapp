@@ -1,0 +1,17 @@
+docker-copose für blue Deployment erstellen
+-------------------------------------------
+
+- Erstelle die docker-compose.yml Datei in deployment/blue
+- 2 Services werden benötigt api und nginx
+- API
+  - Soll das erstellte Dockerfile verwenden
+  - Benötigt Zugriff auf die mongodb
+  - Soll ein Healthcheck auf die URL "http://localhost:3000/health" beinhalten (Intervall 30s, Timeout 10s, Versuche 3)
+    Tipp: curl verwenden
+- NGINX
+  - Port Mapping für 8081
+  - Konfiguration muss im Container als /etc/nginx/conf.d/default.conf verfügbar sein
+  - Healthcheck wie bei API aber auf http://localhost/health
+  - Benötigt Zugriff auf die API (gleiches Netzwerk)
+- Starte dann beide Container mit docker compose
+- In bruno-collection sind die Requests gegeben. Damit kann der GET Aufruf getestet werden (eventuell ist URL anzupassen)

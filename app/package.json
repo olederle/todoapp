@@ -1,0 +1,27 @@
+{
+    "name": "todo-api",
+    "version": "1.0.0",
+    "description": "Todo API with MongoDB",
+    "private": true,
+    "main": "src/index.js",
+    "scripts": {
+        "start": "node src/index.js",
+        "dev": "MONGODB_URI=mongodb://localhost:27017/todos nodemon src/index.js",
+        "test": "jest"
+      },
+    "dependencies": {
+      "cors": "^2.8.5",
+      "dotenv": "^16.4.7",
+      "express": "^4.21.2",
+      "express-validator": "^7.2.1",
+      "js-model-mapper": "^1.0.0",
+      "mongoose": "^8.11.0",
+      "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+      "nodemon": "^3.1.9"
+    },
+    "engines": {
+      "node": ">=14.0.0"
+    }
+  }

@@ -1,0 +1,5 @@
+Starte den mongodb Container
+----------------------------
+
+- docker-compose.yml is in deployment/mongodb gegeben
+- Was muss noch durchgeführt werden, damit mongodb erfolgreich gestartet werden kann?

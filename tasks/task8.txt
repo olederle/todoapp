@@ -1,0 +1,11 @@
+Load Balancer
+-------------
+
+- Ändere den proxy nun so ab, dass wir blue and green Deployment als parallel laufende Instanzen
+  verwenden und der proxy als load Balancer agiert
+- Welche Vor und Nachteile haben die Varianten
+  round-robin, least-connected, ip-hash
+- Welche ist hier geeignet?
+
+
+https://nginx.org/en/docs/http/load_balancing.html
